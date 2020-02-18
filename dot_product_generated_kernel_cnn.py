@@ -277,9 +277,9 @@ if __name__ == '__main__':
 
     
     
-    class KernelPredictCNN(nn.Module):
+    class KernelGenerateCNN(nn.Module):
         def __init__(self):
-            super(KernelPredictCNN, self).__init__()
+            super(KernelGenerateCNN, self).__init__()
             
             num_channels = 100
             num_kernels = 50
@@ -333,7 +333,7 @@ if __name__ == '__main__':
             return x
 
 
-    net = KernelPredictCNN()
+    net = KernelGenerateCNN()
 
 
     net = net.to(device)
